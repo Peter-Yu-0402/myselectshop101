@@ -16,7 +16,10 @@
 <body>
 <div id="login-form">
     <div id="login-title">Log into Select Shop</div>
-    <br>
+    <!--REST API key를 카카오 앱키로부터 복사붙여넣기 -->
+    <button id="login-kakao-btn" onclick="location.href='https://kauth.kakao.com/oauth/authorize?client_id=e134aa4bb8f4349638590f11ab1dc77b&redirect_uri=http://localhost:8080/api/user/kakao/callback&response_type=code'">
+        카카오로 로그인하기
+    </button>
     <button id="login-id-btn" onclick="location.href='/api/user/signup'">
         회원 가입하기
     </button>
